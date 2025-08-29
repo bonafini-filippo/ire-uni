@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My PWA App
 
-## Getting Started
+Una Progressive Web App moderna costruita con Next.js, TailwindCSS, Framer Motion e shadcn/ui.
 
-First, run the development server:
+## 🚀 Caratteristiche
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ✅ **Progressive Web App (PWA)** - Installabile su dispositivi mobili e desktop
+- ✅ **Responsive Design** - Ottimizzata per tutti i dispositivi
+- ✅ **Menu Laterale** - Sidebar scorrevole con animazioni fluide
+- ✅ **Animazioni** - Transizioni eleganti con Framer Motion
+- ✅ **Componenti Moderni** - UI components di shadcn/ui
+- ✅ **Typography** - Tipografia coerente e leggibile
+- ✅ **Tema Scuro/Chiaro** - Supporto automatico per entrambi i temi
+
+## 🛠 Stack Tecnologico
+
+- **Next.js 15** - React framework con App Router
+- **TypeScript** - Type safety
+- **TailwindCSS** - Styling utility-first
+- **Framer Motion** - Animazioni fluide
+- **shadcn/ui** - Componenti UI moderni
+- **next-pwa** - Configurazione Progressive Web App
+- **Lucide React** - Icone moderne
+
+## 🏗 Struttura del Progetto
+
+```
+my-pwa-app/
+├── src/
+│   ├── app/                    # App Router pages
+│   │   ├── layout.tsx         # Root layout
+│   │   ├── page.tsx           # Home page
+│   │   ├── argomento1/        # Sezione Argomento 1
+│   │   ├── argomento2/        # Sezione Argomento 2
+│   │   ├── argomento3/        # Sezione Argomento 3
+│   │   ├── settings/          # Pagina Impostazioni
+│   │   └── about/             # Pagina Info
+│   ├── components/
+│   │   ├── layout/            # Layout components
+│   │   │   ├── main-layout.tsx
+│   │   │   ├── topbar.tsx
+│   │   │   └── sidebar.tsx
+│   │   └── ui/                # shadcn/ui components
+│   └── lib/
+├── public/
+│   ├── manifest.json          # PWA manifest
+│   ├── icon-192x192.png       # App icon 192x192
+│   └── icon-512x512.png       # App icon 512x512
+├── next.config.ts             # Next.js + PWA config
+└── tailwind.config.ts         # Tailwind configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Comandi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Sviluppo
+```bash
+npm run dev
+```
+Avvia il server di sviluppo su `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build
+```bash
+npm run build
+```
+Crea una build di produzione ottimizzata
 
-## Learn More
+### Preview Build
+```bash
+npm run build && npm start
+```
+Crea la build e avvia il server di produzione
 
-To learn more about Next.js, take a look at the following resources:
+### Linting
+```bash
+npm run lint
+```
+Esegue ESLint per controllare il codice
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Personalizzazione
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Modificare il Menu
+Edita `/src/components/layout/sidebar.tsx` per aggiungere o modificare le voci del menu:
 
-## Deploy on Vercel
+```typescript
+const menuItems = [
+  { href: "/", label: "Home", icon: Home },
+  { href: "/nuovo-argomento", label: "Nuovo Argomento", icon: BookOpen },
+  // Aggiungi nuove voci qui...
+];
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Aggiungere Nuove Pagine
+1. Crea una nuova directory in `src/app/nome-pagina/`
+2. Aggiungi il file `page.tsx` con il contenuto
+3. Aggiungi la voce nel menu sidebar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Modificare i Colori
+I colori sono configurati in `src/app/globals.css` usando il sistema di design di shadcn/ui.
+
+### Personalizzare le Animazioni
+Le animazioni Framer Motion possono essere modificate nei singoli componenti. Esempi:
+- Home page: `/src/app/page.tsx`
+- Layout principale: `/src/components/layout/main-layout.tsx`
+
+## 📱 Installazione PWA
+
+### Su Mobile (iOS/Android)
+1. Apri l&apos;app nel browser
+2. Tocca il menu del browser
+3. Seleziona "Aggiungi alla schermata home" o "Installa app"
+
+### Su Desktop
+1. Apri l&apos;app nel browser Chrome/Edge
+2. Clicca l&apos;icona di installazione nella barra degli indirizzi
+3. Conferma l&apos;installazione
+
+## 🔧 Configurazione PWA
+
+Il file `public/manifest.json` contiene le configurazioni PWA:
+- Nome e descrizione dell&apos;app
+- Icone per diverse risoluzioni
+- Tema e colori
+- Modalità di visualizzazione
+
+## 📦 Deploy
+
+### Vercel (Raccomandato)
+```bash
+npm i -g vercel
+vercel
+```
+
+### Netlify
+1. Connetti il repository su Netlify
+2. Imposta il comando build: `npm run build`
+3. Imposta la directory output: `.next`
+
+### Altri Provider
+L&apos;app è compatibile con tutti i provider che supportano Next.js.
