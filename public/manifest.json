@@ -1,7 +1,7 @@
 {
-  "name": "Probabilità e Statistica - Uni",
-  "short_name": "Prob&Stat",
-  "description": "App di studio per Probabilità e Statistica con formule matematiche interattive",
+  "name": "MathStudy - Probabilità & Statistica",
+  "short_name": "MathStudy",
+  "description": "La tua app di studio definitiva per Probabilità e Statistica universitaria",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Probabilità e Statistica - Uni",
-  description: "App di studio per Probabilità e Statistica con formule matematiche interattive",
+  title: "MathStudy - Probabilità & Statistica",
+  description: "La tua app di studio definitiva per Probabilità e Statistica universitaria. Formule, esempi e teoria sempre a portata di mano.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Prob&Stat",
+    title: "MathStudy",
   },
   formatDetection: {
     telephone: false,
@@ -46,7 +46,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon-192x192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Prob&Stat" />
+        <meta name="apple-mobile-web-app-title" content="MathStudy" />
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body
