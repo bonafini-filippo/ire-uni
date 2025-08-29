@@ -1,12 +1,15 @@
 {
-  "name": "My PWA App",
-  "short_name": "MyPWA",
-  "description": "A beautiful Progressive Web App built with Next.js",
+  "name": "Probabilità e Statistica - Uni",
+  "short_name": "Prob&Stat",
+  "description": "App di studio per Probabilità e Statistica con formule matematiche interattive",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "orientation": "portrait",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity"],
+  "lang": "it",
+  "scope": "/",
   "icons": [
     {
       "src": "/icon-192x192.png",
@@ -19,6 +22,32 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Calcolo Combinatorio",
+      "short_name": "Combinatoria",
+      "description": "Accesso diretto al calcolo combinatorio",
+      "url": "/combinatoria",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Variabili Aleatorie Discrete",
+      "short_name": "V.A. Discrete",
+      "description": "Studio delle variabili aleatorie discrete",
+      "url": "/argomento1",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
