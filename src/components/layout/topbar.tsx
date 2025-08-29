@@ -15,11 +15,11 @@ export function TopBar() {
         <div className="flex items-center space-x-4">
           <Sidebar />
           <motion.h1 
-            className="text-xl font-bold"
+            className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            My PWA App
+            MathStudy
           </motion.h1>
         </div>
       </div>
