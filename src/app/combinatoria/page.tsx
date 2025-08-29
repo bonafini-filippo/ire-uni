@@ -33,7 +33,7 @@ export default function CalcoloCombinatorio() {
                 Se un esperimento può essere suddiviso in <Formula math="k" /> fasi successive, 
                 dove la prima fase ha <Formula math="n_1" /> possibili risultati, la seconda ha 
                 <Formula math="n_2" /> possibili risultati, e così via, allora il numero totale 
-                di possibili risultati dell'esperimento è:
+                di possibili risultati dell&apos;esperimento è:
               </p>
               <Formula block math="n_1 \times n_2 \times \ldots \times n_k" />
             </Definition>
@@ -119,11 +119,11 @@ export default function CalcoloCombinatorio() {
             <Definition title="Combinazioni di k Oggetti da n">
               <p className="mb-2">
                 Il numero di modi per scegliere <Formula math="k" /> oggetti da un insieme 
-                di <Formula math="n" /> oggetti distinti (senza considerare l'ordine) è:
+                di <Formula math="n" /> oggetti distinti (senza considerare l&apos;ordine) è:
               </p>
               <Formula block math="C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}" />
               <p className="text-xs mt-2">
-                Si legge: "n su k" o "coefficiente binomiale"
+                Si legge: &quot;n su k&quot; o &quot;coefficiente binomiale&quot;
               </p>
             </Definition>
           </div>
@@ -156,7 +156,7 @@ export default function CalcoloCombinatorio() {
               </p>
               <Formula block math="CR_{n,k} = \binom{n+k-1}{k} = \binom{n+k-1}{n-1}" />
               <p className="text-xs mt-2">
-                Equivale al numero di soluzioni non negative dell'equazione 
+                Equivale al numero di soluzioni non negative dell&apos;equazione 
                 <Formula math="x_1 + x_2 + \ldots + x_n = k" />
               </p>
             </Definition>
@@ -217,7 +217,7 @@ export default function CalcoloCombinatorio() {
         <CardContent>
           <Example title="Problema">
             <p className="mb-3">
-              Un'aula ha 30 studenti. In quanti modi si possono:
+              Un&apos;aula ha 30 studenti. In quanti modi si possono:
               <br />a) Scegliere 5 studenti per un gruppo di lavoro?
               <br />b) Eleggere presidente, vice-presidente e segretario?
               <br />c) Formare una fila di tutti gli studenti?
@@ -312,7 +312,7 @@ export default function CalcoloCombinatorio() {
                 <h5 className="font-semibold">Soluzione:</h5>
                 <p className="mb-2">
                   Si tratta di combinazioni con ripetizione: scegliere 10 dolci da 4 tipi, 
-                  dove l'ordine non conta e le ripetizioni sono ammesse.
+                  dove l&apos;ordine non conta e le ripetizioni sono ammesse.
                 </p>
                 
                 <p className="mb-2">
